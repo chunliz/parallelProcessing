@@ -1,0 +1,11 @@
+#!/bin/bash --login
+#PBS -l nodes=1:ppn=1:gfx10,gres=gpu:1,feature=gpgpu
+#PBS -l walltime=01:00:00
+#PBS -j oe
+
+module load CUDA
+cd ${PBS_O_WORKDIR}
+./cardiacsim-v400_32 -n 1024 -t 100 -p 0
+./cardiacsim-v400_64 -n 1024 -t 100 -p 0
+./cardiacsim-v400_128 -n 1024 -t 100 -p 0
+./cardiacsim-v400_256 -n 1024 -t 100 -p 0

@@ -1,0 +1,37 @@
+
+The following have been reloaded with a version change:
+  1) Boost/1.47.0 => Boost/1.52.0       3) R/2.15.1 => R/3.1.0
+  2) OpenMPI/1.4.3 => OpenMPI/1.4.4     4) TBB/4.1.0 => TBB/4.1.1.117
+
+n = 60000
+Time needed for count sort using 10 threads = 73.738463
+time needed for sequential Quicksort = 0.005504
+Wrong Ans
+n = 60000
+Time needed for count sort using 20 threads = 71.456653
+time needed for sequential Quicksort = 0.005492
+Wrong Ans
+n = 60000
+Time needed for count sort using 40 threads = 71.579286
+time needed for sequential Quicksort = 0.005957
+Wrong Ans
+n = 60000
+Time needed for count sort using 80 threads = 102.293988
+time needed for sequential Quicksort = 0.005460
+Wrong Ans
+n = 60000
+Time needed for count sort using 120 threads = 135.904934
+time needed for sequential Quicksort = 0.005642
+Wrong Ans
+n = 60000
+Time needed for count sort using 160 threads = 168.693886
+time needed for sequential Quicksort = 0.005636
+Wrong Ans
+n = 60000
+Time needed for count sort using 200 threads = 188.315271
+time needed for sequential Quicksort = 0.005498
+Wrong Ans
+=>> PBS: job killed: walltime 1841 exceeded limit 1800
+Unknown option: 1
+Unknown option: 1
+Usage: /var/spool/torque/mom_priv/epilogue [-hkbv]

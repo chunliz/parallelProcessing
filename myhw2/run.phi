@@ -1,0 +1,25 @@
+#!/bin/bash -login
+#PBS -l walltime=00:30:00,nodes=1:ppn=20:mics=2,feature=phi
+#PBS -j oe
+#PBS -N count_sort
+ 
+# load necessary modules, e.g.
+module swap GNU Intel
+ 
+# change to the working directory where your code is located
+#cd ~/cse491_fs15_s2/hw2
+cd $PBS_O_WORKDIR
+
+# call your executable with different no. of threads
+./count_sort4.mic  60000 10
+./count_sort4.mic  60000 20
+./count_sort4.mic  60000 40
+# etc..
+
+./count_sort4.mic  60000 80
+./count_sort4.mic  60000 120
+./count_sort4.mic  60000 160
+./count_sort4.mic  60000 200
+./count_sort4.mic  60000 240
+
+#etc..
